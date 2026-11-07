@@ -9,7 +9,6 @@ P19（MRK-65LB，10–65 lb 侧滑插销可调哑铃），2027 年 2 月美国�
 | 总览 | `index.html` |
 | 产品营销方案 | `product.html` |
 | 整合营销方案 | `imc.html` |
-| 竞品规格对比 | `specs.html` |
 | 对标竞品参数页（产品图、按重量归一化、质保原文链接） | `comp/index.html` |
 | Explore 教育页 PC V3 | `explore.html` |
 
