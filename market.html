@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P19 市场容量</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Noto+Sans+SC:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#f5f6f7;--paper:#fff;--fg:#1a1f24;--muted:#5b646e;--line:#dce0e5;--accent:#1f4e79;--accent-soft:#e7eef6;--th:#f0f2f4;
+--font:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;--data:"IBM Plex Sans","Noto Sans SC",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#13171c;--paper:#1b2127;--fg:#e5e8eb;--muted:#99a3ad;--line:#2d353e;--accent:#8fb9e2;--accent-soft:#1e2d3c;--th:#222a32;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font);font-size:15px;line-height:1.75}
+a{color:var(--accent)}
+.top{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--line)}
+.top .in{max-width:1240px;margin:0 auto;padding:10px max(16px,env(safe-area-inset-left));display:flex;gap:18px;align-items:center;overflow-x:auto;white-space:nowrap}
+.top b{font-size:14px;letter-spacing:.04em}
+.top a{font-size:13px;color:var(--muted);text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
+.top a.on,.top a:hover{color:var(--fg);border-bottom-color:var(--accent)}
+.shell{max-width:1240px;margin:0 auto;padding:28px max(16px,env(safe-area-inset-left)) 64px;display:grid;grid-template-columns:240px minmax(0,1fr);gap:32px}
+.toc{position:sticky;top:64px;align-self:start;max-height:calc(100vh - 88px);overflow:auto;font-size:13px}
+.toc ul{list-style:none;margin:0;padding:0}.toc ul ul{padding-left:12px}
+.toc a{display:block;padding:3px 0;color:var(--muted);text-decoration:none;line-height:1.45}
+.toc a:hover{color:var(--accent)}
+.toc>ul>li>a{color:var(--fg);font-weight:500;margin-top:6px}
+main{background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:36px 44px;min-width:0}
+main h1{font-size:28px;margin:0 0 6px;line-height:1.3}
+main h2{font-size:21px;margin:44px 0 12px;padding-top:12px;border-top:1px solid var(--line)}
+main h3{font-size:17px;margin:28px 0 10px}
+main p{margin:10px 0}
+main ul,main ol{padding-left:22px}main li{margin:4px 0}
+.tw{overflow-x:auto;margin:14px 0}
+table{border-collapse:collapse;width:100%;font-size:13.5px;line-height:1.55}
+th,td{border:1px solid var(--line);padding:8px 10px;vertical-align:top;text-align:left}
+th{background:var(--th);font-weight:600;white-space:nowrap}
+td{font-family:var(--font)}
+img{max-width:100%;height:auto;border-radius:6px;border:1px solid var(--line);display:block;margin:14px 0}
+figure{margin:16px 0}figcaption{font-size:12.5px;color:var(--muted)}
+blockquote{margin:12px 0;padding:8px 14px;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 6px 6px 0}
+.meta{color:var(--muted);font-size:13px}
+.shell.one{grid-template-columns:minmax(0,1040px);justify-content:center}
+@media (max-width:900px){.shell{grid-template-columns:1fr}.toc{display:none}main{padding:24px 18px}}
+</style></head><body>
+<header class="top"><div class="in"><b>MERACH P19</b><a href="index.html" class="">总览</a><a href="product.html" class="">产品营销方案</a><a href="imc.html" class="">整合营销方案</a><a href="comp/" class="">对标竞品参数页</a><a href="explore.html" class="">Explore 教育页</a><a href="handoff.html" class="">开发需求</a><a href="market.html" class="on">市场容量</a></div></header><div class="shell one"><main><h1>P19 线上市场容量（TAM / SAM / SOM）</h1>
+<p class="meta">版本 2026-11-09 · 范围：美国、德国线上（Amazon + 独立站）· 期间：上市后 12 个月（2027-02 至 2028-01）· 未使用付费数据工具，结论为量级判断。</p>
+<h2>一、结论</h2>
+<div class="warn"><p><strong>首年 1 万对属于冲刺目标，基准判断约 4,400 对，乐观情形约 8,400 对。</strong>要达到 1 万对，P19 稳定期每月需卖出约 950 对，其中 Amazon 美国约 550–600 对；而目前 Amazon 上 $500 以上的可调哑铃（NÜO、Snode、REP、PowerBlock USA 等）每款月销仅 50 对以上，整个价位带合计约 600 对/月。也就是说，P19 一款需要做到接近当前整个价位带的销量。</p></div>
+<style>.fn{display:grid;gap:10px;margin:18px 0}.fn div{border-radius:6px;padding:12px 16px;color:#fff;font-family:var(--data)}.fn b{font-size:18px;margin-right:10px}.fn span{font-size:13px;opacity:.9}
+.k{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:12px;margin:16px 0}.k div{border:1px solid var(--line);border-radius:8px;padding:14px}.k b{display:block;font-size:22px;font-family:var(--data)}.k span{font-size:12.5px;color:var(--muted)}
+.warn{border-left:3px solid #c2410c;background:color-mix(in srgb,#c2410c 10%,transparent);padding:10px 14px;border-radius:0 6px 6px 0;margin:14px 0}</style>
+<div class="fn">
+<div style="background:#1f4e79;width:100%"><b>TAM $475M</b><span>美德线上哑铃全品类 · 年销售额</span></div>
+<div style="background:#2f6aa3;width:62%;min-width:260px"><b>SAM $98M</b><span>≥$300 中高端可调哑铃 · 约 23 万对/年</span></div>
+<div style="background:#4a8fd0;width:34%;min-width:260px"><b>SOM 基准 4,410 对</b><span>首年 · 约 $2.9M · SAM 的 1.9%</span></div>
+<div style="background:#c2410c;width:44%;min-width:260px"><b>目标 10,000 对</b><span>约 $6.5M · 需占 SAM 的 4.3%（件数）</span></div></div>
+<p>1 万对在大盘中占比并不高（SAM 件数的 4.3%），难点不在市场空间，而在价位：SAM 的销量主要集中在 $300–500（BowFlex Results Series $399 月销 2,000 对以上），$700 档的现有需求很小。P19 需要从 $400 档“拉高”用户，或把价格做进 $500–600。</p>
+<h2>二、三层市场</h2>
+<div class="tw"><table><thead><tr><th>层级</th><th>定义</th><th>年销售额</th><th>年销量</th><th>置信度</th></tr></thead><tbody><tr><td>TAM</td><td>美、德线上哑铃全品类（固定 + 可调），Amazon + 独立站</td><td>$475M</td><td>约 700 万件（含低价单只）</td><td>中</td></tr><tr><td>SAM</td><td>其中单价 ≥$300 的中高端可调哑铃</td><td>$98M</td><td>约 23 万对</td><td>中</td></tr><tr><td>直接竞争带</td><td>≥$500 可调哑铃（P19 所在价位）</td><td>—</td><td>Amazon 美国约 7 千对；含独立站约 1.5–2 万对</td><td>低</td></tr><tr><td>SOM</td><td>P19 首年可获得销量（基准）</td><td>$2.9M</td><td>4,410 对</td><td>低</td></tr></tbody></table></div>
+<h3>测算过程</h3>
+<ol>
+<li><strong>Amazon 美国实测：</strong>2026-11 抓取 Amazon.com 20 组哑铃相关关键词前 2–5 页，共 1,326 个商品，其中 342 个哑铃商品显示“过去一个月购买量”标签。合计月销 15.6 万件、月销售额 $959 万。</li>
+<li><strong>修正：</strong>标签向下取整（如 2K+ 实为 2,000–2,999），乘 1.3；未抓到的长尾商品和月销不足 50 的商品，再乘 1.3。合计系数 1.69，得 Amazon 美国哑铃年销售额约 $194M。</li>
+<li><strong>补独立站与其他平台：</strong>按 Amazon 占美国线上哑铃销售额 45% 推算（OpenBrand：Amazon 占线上健身器材 43% 的销量份额），美国线上约 $432M；中高端可调哑铃更依赖独立站，Amazon 占比按 40% 计。</li>
+<li><strong>德国：</strong>Amazon.de 无法抓取，按美国的 10% 估算（德国 2023 年室内健身器材支出约 €4.21 亿；人口约为美国的 1/4，人均支出偏低）。该部分置信度低。</li>
+<li><strong>交叉校验：</strong>Technavio 估算全球哑铃市场约 $19 亿，北美占比约四成；BowFlex SelectTech 召回涉及约 370 万套，按近 20 年销售期计，约每年 19 万套，与 SAM 约 23 万对处于同一量级。</li></ol>
+<h2>三、SAM 内的价位结构（Amazon 美国，月销量）</h2>
+<div class="tw"><table><thead><tr><th>价位</th><th>可调哑铃</th><th>固定哑铃</th><th>代表商品</th></tr></thead><tbody><tr><td>$150–300</td><td>5,350</td><td>3,150</td><td>CAP Adjustabell、Yagud、FITPLAM 等国产款</td></tr><tr><td>$300–500</td><td>3,850</td><td>600</td><td>BowFlex Results Series $399（2,000+）、PowerBlock EXP $399（600+）、Core Fitness $351（600+）</td></tr><tr><td>$500 以上</td><td>350</td><td>200</td><td>NÜO 5–50 / 580（$729–731）、Snode AD80（$750）、REP QuickDraw（$576）、PowerBlock USA 90（$869），均为 50+/月</td></tr></tbody></table></div>
+<p>数据为标签原值，未修正。MERACH 现有可调哑铃（$79.99–149.99）最高约 200+/月。</p>
+<h2>四、SOM 三种情形</h2>
+<p>按稳定期月销量测算，前 3 个月爬坡按 50% 计（全年折合 10.5 个月），平均成交价按 $650/对（$699.99–799 扣除促销）。</p>
+<div class="tw"><table><thead><tr><th>情形</th><th>Amazon 美国 /月</th><th>独立站 /月</th><th>德国 /月</th><th>首年销量</th><th>首年销售额</th><th>占 SAM（件数）</th></tr></thead><tbody><tr><td>保守</td><td>120</td><td>60</td><td>25</td><td>2,152 对</td><td>$1.4M</td><td>0.9%</td></tr><tr><td>基准</td><td>250</td><td>120</td><td>50</td><td>4,410 对</td><td>$2.9M</td><td>1.9%</td></tr><tr><td>乐观</td><td>500</td><td>200</td><td>100</td><td>8,400 对</td><td>$5.5M</td><td>3.6%</td></tr><tr><td><b>目标</b></td><td>约 570</td><td>约 250</td><td>约 130</td><td><b>10,000 对</b></td><td>$6.5M</td><td>4.3%</td></tr></tbody></table></div>
+<ul>
+<li><strong>保守：</strong>与 NÜO、Snode 在 Amazon 的现有水平接近，略高。</li>
+<li><strong>基准：</strong>Amazon 美国做到 $500 以上价位带第一，约为 PowerBlock EXP 的 40%。</li>
+<li><strong>乐观：</strong>Amazon 美国接近 PowerBlock EXP，约为 BowFlex Results Series 的四分之一。</li></ul>
+<h2>五、1 万对需要什么条件</h2>
+<ol>
+<li><strong>价格：</strong>首发价或大促价进入 $500–600，直接与 $399 档的 BowFlex、PowerBlock 争夺用户；维持 $699 以上则很难达到。</li>
+<li><strong>Amazon 排名：</strong>“adjustable dumbbells” 等核心词进入首页自然位，需要上市期集中投放与站外测评（GGR、BarBend、YouTube）配合。</li>
+<li><strong>独立站：</strong>独立站月均 250 对，需要 Meta、Google 投放与 Waitlist 首发转化共同支撑。</li>
+<li><strong>周期或渠道：</strong>若价格不下探，可将 1 万对改为 18–24 个月目标，或纳入线下渠道（Costco、Dick's 等）。线下渠道不在本次测算范围内。</li></ol>
+<h2>六、局限与下一步</h2>
+<ul>
+<li>未使用 Jungle Scout、Helium 10 等工具；“过去一个月购买量”为 Amazon 前台标签，单次抓取存在季节性（11 月处于旺季前），误差约 ±30%。</li>
+<li>Amazon 占比、德国比例为假设值，独立站销量未直接测得。</li>
+<li>建议补充：MERACH 现有可调哑铃全年销量、P16 首年数据、上市广告预算，用于把 SOM 从对标法改为投放漏斗测算。</li></ul>
+<h2>参考来源</h2>
+<ul>
+<li>Amazon.com 搜索结果“过去一个月购买量”标签，2026-11-09 抓取</li>
+<li><a href="https://openbrand.com/newsroom/blog/exercise-equipment-market-1-pandemic-0" target="_blank" rel="noopener">OpenBrand：Exercise Equipment Market（Amazon 线上份额）</a></li>
+<li><a href="https://www.technavio.com/report/dumbbells-market-industry-analysis" target="_blank" rel="noopener">Technavio：Dumbbells Market</a></li>
+<li><a href="https://de.statista.com/infografik/28679/geschaetzter-umsatz-mit-indoor-fitnessausruestung-im-dach-raum" target="_blank" rel="noopener">Statista：DACH 室内健身器材支出</a></li>
+<li><a href="https://www.drugs.com/news/bowflex-recalls-3-8-million-dumbbells-after-injury-reports-125328.html" target="_blank" rel="noopener">BowFlex SelectTech 召回（约 370 万套）</a></li>
+<li><a href="https://sginews.com/Content/rep-fitness-sees-international-sales-fueling-2025-growth.aspx" target="_blank" rel="noopener">SGI News：REP Fitness 2024 年营收超 $1.3 亿</a></li>
+<li><a href="https://www.asinsight.com/report/US/nuobell-adjustable-dumbbells" target="_blank" rel="noopener">ASINSIGHT：可调哑铃 Amazon 销量估算（2026-07）</a></li></ul>
+</main></div></body></html>
