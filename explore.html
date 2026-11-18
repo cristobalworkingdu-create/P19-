@@ -39,23 +39,24 @@ blockquote{margin:12px 0;padding:8px 14px;border-left:3px solid var(--accent);ba
 @media (max-width:900px){.shell{grid-template-columns:1fr}.toc{display:none}main{padding:24px 18px}}
 </style></head><body>
 <header class="top"><div class="in"><b>MERACH P19</b><a href="index.html" class="">总览</a><a href="product.html" class="">产品营销方案</a><a href="imc.html" class="">整合营销方案</a><a href="comp/" class="">对标竞品参数页</a><a href="explore.html" class="on">Explore 教育页</a><a href="handoff.html" class="">开发需求</a><a href="market.html" class="">市场容量</a></div></header>
-<div class="shell one"><main><h1>Explore 教育页 · V6（11/18）</h1><p class="meta">深石墨、可交互。图片左上角标注需拍编号，上线前全部替换；Power Users 视频由内测用户提供后放入第 6 屏。</p>
+<div class="shell one"><main><h1>Explore 教育页 · V7（11/18 二轮）</h1><p class="meta">深石墨、可交互。图片左上角标注需拍编号，上线前全部替换；Power Users 视频由内测用户提供后放入第 6 屏。</p>
 <p>设计稿：<a href="https://www.figma.com/design/44z4t0SOMdf8TVVw1gtSZz/%E6%97%A0%E6%B0%A7P19?node-id=68-608" target="_blank" rel="noopener">Figma PC</a> · <a href="https://www.figma.com/design/44z4t0SOMdf8TVVw1gtSZz/%E6%97%A0%E6%B0%A7P19?node-id=70-679" target="_blank" rel="noopener">Figma Mobile</a>　可点击原型：<a href="https://www.figma.com/proto/44z4t0SOMdf8TVVw1gtSZz/%E6%97%A0%E6%B0%A7P19?node-id=68-608&amp;starting-point-node-id=68%3A608" target="_blank" rel="noopener">PC 原型</a> · <a href="https://www.figma.com/proto/44z4t0SOMdf8TVVw1gtSZz/%E6%97%A0%E6%B0%A7P19?node-id=70-679&amp;starting-point-node-id=70%3A679" target="_blank" rel="noopener">Mobile 原型</a>　屏占比与部件说明见 <a href="handoff.html">开发需求</a>。</p>
 <h2>本版调整</h2>
 <ul>
-<li><strong>语言收拢：</strong>标题与正文改为生活化表达，参考竞品官网常用说法（drop tested、fast weight changes、fully knurled handle、5 lb increments 等）；工艺数值统一收进每屏的“See the specs”。</li>
-<li><strong>高精度：</strong>由对比条形图改为称重测试视频、天平画面、插销微距与可点击的重量选择器。</li>
-<li><strong>新增 Power Users：</strong>内测用户竖版短视频，标注 Received P19 for testing。</li>
-<li><strong>画面：</strong>主视觉人与产品各半，其余以产品图为主；工艺屏改为 15 秒工厂短片；Details 并入 Easy。</li>
+<li><b>首屏全屏：</b>PC 与 Mobile 首屏都铺满一屏；只保留 Join the Waitlist 一个按钮，取消 Watch the Drop Test 和三支柱胶囊（与下方导航重复）。</li>
+<li><b>支柱导航吸顶：</b>Durable / Accurate / Easy 等锚点在滚动时一直置顶。</li>
+<li><b>高精度：</b>改为大图画廊（一次看一张大图，Mobile 也看得清）加拖拽重量滑块。</li>
+<li><b>See the specs：</b>工艺数值展开后讲清“参数是什么、对用户意味着什么”，每屏 5 行。</li>
+<li><b>删除 Your Space 屏；</b>Mobile 与 PC 交互一致（画廊、滑块、步骤、规格、表单均可点击）。</li>
 </ul>
 <h2>页面结构</h2>
-<div class="tw"><table><thead><tr><th>屏</th><th>模块</th><th>要点</th></tr></thead><tbody><tr><td>1</td><td>Hero</td><td>Built to Take the Drop.；主视觉人与产品各半；三个胶囊 Durable / Accurate / Easy</td></tr><tr><td>2</td><td>Durable · 耐摔</td><td>跌落测试视频（主证据）+ 两张产品证据卡；参数折叠在 See the specs</td></tr><tr><td>3</td><td>Accurate · 高精度</td><td>称重测试视频 + 天平 + 插销微距 + 可点击的重量选择器；参数折叠</td></tr><tr><td>4</td><td>Easy · 易用</td><td>可切换三步演示 + 握把 / 圆形配重 / 档位三张产品图 + Drop Set 小模块；参数折叠</td></tr><tr><td>5</td><td>How It's Made · 工艺</td><td>15 秒工厂短片（机加工、热处理、电镀）+ 三个工艺标签</td></tr><tr><td>6</td><td>Power Users · 内测用户</td><td>3–5 条竖版短视频，点击播放；FTC 披露</td></tr><tr><td>7</td><td>Your Space</td><td>居家空间轮播（P1a）+ “13 pairs → 1 pair”</td></tr><tr><td>8</td><td>FAQ + Waitlist</td><td>手风琴；等待名单表单</td></tr></tbody></table></div>
+<div class="tw"><table><thead><tr><th>屏</th><th>模块</th><th>要点</th></tr></thead><tbody><tr><td>1</td><td>Hero（全屏）</td><td>Built to Take the Drop.；人与产品各半铺满首屏；一个主按钮</td></tr><tr><td>—</td><td>支柱导航</td><td>吸顶；滚动高亮；点击平滑滚动</td></tr><tr><td>2</td><td>Durable · 耐摔</td><td>跌落测试视频 + 两张产品证据卡；See the specs（传动轴、表面、锁固结构、螺栓、跌落测试）</td></tr><tr><td>3</td><td>Accurate · 高精度</td><td>大图画廊（称重 / 天平 / 插销微距）+ 拖拽重量滑块；See the specs（加工、镀层厚度、重量精度、配对、工序）</td></tr><tr><td>4</td><td>Easy · 易用</td><td>三步演示 + 握把 / 圆形配重 / 档位 + Drop Set；See the specs（换重方式、重量范围、档位、配重片、握把）</td></tr><tr><td>5</td><td>How It’s Made · 工艺</td><td>15 秒工厂短片 + 三个工艺标签</td></tr><tr><td>6</td><td>Power Users · 内测用户</td><td>3–5 条竖版短视频，点击播放；FTC 披露</td></tr><tr><td>7</td><td>FAQ + Waitlist</td><td>手风琴；等待名单表单</td></tr></tbody></table></div>
 <h2>交互清单</h2>
-<div class="tw"><table><thead><tr><th>元素</th><th>交互</th></tr></thead><tbody><tr><td>Join the Waitlist（首屏、锚点栏）</td><td>悬停变色；点击滚动到 #waitlist</td></tr><tr><td>Watch the Drop Test / 各视频播放按钮</td><td>点击弹窗播放：跌落测试、称重测试、工厂短片、内测用户竖版视频；Mobile 为全屏</td></tr><tr><td>三个胶囊 Durable / Accurate / Easy</td><td>点击滚动到对应屏</td></tr><tr><td>锚点栏</td><td>吸顶；滚动高亮；点击平滑滚动</td></tr><tr><td>See the specs</td><td>点击展开 / 收起该屏参数（工艺数值只在此出现）</td></tr><tr><td>重量选择器</td><td>点击 15 / 30 / 45 / 65 lb，显示该档实测重量（称重实测后填入）</td></tr><tr><td>Easy 步骤</td><td>点击 01 / 02 / 03 切换主图</td></tr><tr><td>Your Space 轮播</td><td>箭头切换 4 张；Mobile 横滑</td></tr><tr><td>FAQ 手风琴</td><td>默认展开第 1 条，同时只展开 1 条</td></tr><tr><td>Waitlist 表单</td><td>提交 → 加载 → 成功；错误态</td></tr></tbody></table></div>
+<div class="tw"><table><thead><tr><th>元素</th><th>交互</th></tr></thead><tbody><tr><td>Join the Waitlist（首屏、吸顶导航）</td><td>悬停变色；点击滚动到 #waitlist</td></tr><tr><td>支柱导航（吸顶）</td><td>position: sticky; top: 0，滚动后一直置顶；当前所在屏高亮；点击平滑滚动。锚点：Durable / Accurate / Easy / How It’s Made / Power Users / FAQ</td></tr><tr><td>视频播放按钮</td><td>点击弹窗播放：跌落测试、称重测试、工厂短片、内测用户竖版视频；Mobile 为全屏</td></tr><tr><td>精度画廊</td><td>PC：点击右侧三张标签卡切换左侧大图；Mobile：点击标签或左右滑动切换；称重卡带播放按钮</td></tr><tr><td>拖拽重量滑块</td><td>拖动把手或点击刻度，10–65 lb 每 5 lb 一档，吸附到档位；大数字、配重片高亮、左 / 右实测读数同步变化（实测值称重后填入）</td></tr><tr><td>See the specs</td><td>点击展开 / 收起；展开为“规格 / 参数 / 对用户意味着什么”，PC 三列表格，Mobile 纵向堆叠；三屏各 5 行</td></tr><tr><td>Easy 步骤</td><td>PC 点击 01 / 02 / 03 切换主图；Mobile 点击步骤或左右滑动图片切换</td></tr><tr><td>FAQ 手风琴</td><td>默认展开第 1 条，同时只展开 1 条</td></tr><tr><td>Waitlist 表单</td><td>提交 → 加载 → 成功；错误态（PC 与 Mobile 一致）</td></tr></tbody></table></div>
 <p>所有组件状态已在 Figma 组件区展开：</p>
 <img src="assets/explore-v5-components.webp" alt="Explore 交互组件与状态" loading="lazy">
 <div style="display:grid;grid-template-columns:minmax(0,3fr) minmax(0,1fr);gap:24px;align-items:start">
-<figure style="margin:0"><figcaption><b>PC V6</b></figcaption><img src="assets/explore-pc-v3.webp" alt="P19 Explore 教育页 PC 整页截图" loading="lazy"></figure>
-<figure style="margin:0"><figcaption><b>Mobile V6</b></figcaption><img src="assets/explore-mobile.webp" alt="P19 Explore 教育页 Mobile 整页截图" loading="lazy"></figure>
+<figure style="margin:0"><figcaption><b>PC V7</b></figcaption><img src="assets/explore-pc-v3.webp" alt="P19 Explore 教育页 PC 整页截图" loading="lazy"></figure>
+<figure style="margin:0"><figcaption><b>Mobile V7</b></figcaption><img src="assets/explore-mobile.webp" alt="P19 Explore 教育页 Mobile 整页截图" loading="lazy"></figure>
 </div>
 </main></div></body></html>
