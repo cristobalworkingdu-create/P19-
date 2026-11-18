@@ -3,9 +3,9 @@
 <title>P19 整合营销方案</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Noto+Sans+SC:wght@400;500;700&display=swap">
 <style>
-:root{--bg:#f5f6f7;--paper:#fff;--fg:#1a1f24;--muted:#5b646e;--line:#dce0e5;--accent:#1f4e79;--accent-soft:#e7eef6;--th:#f0f2f4;
+:root{--bg:#f5f6f7;--paper:#fff;--fg:#1a1f24;--muted:#5b646e;--line:#dce0e5;--accent:#1f4e79;--accent-soft:#e7eef6;--th:#f0f2f4;--soft0:#eef0f2;--soft1:#e3edf8;--soft2:#dcefe4;--soft3:#fbefd9;--soft4:#f6e1e1;--soft5:#f3f4f6;--burst:#1f4e79;--burst-fg:#fff;--hi:#1f4e79;--hi-fg:#fff;--md:#bcd2e8;--lo:#f0f2f4;
 --font:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;--data:"IBM Plex Sans","Noto Sans SC",system-ui,sans-serif}
-@media (prefers-color-scheme:dark){:root{--bg:#13171c;--paper:#1b2127;--fg:#e5e8eb;--muted:#99a3ad;--line:#2d353e;--accent:#8fb9e2;--accent-soft:#1e2d3c;--th:#222a32;color-scheme:dark}}
+@media (prefers-color-scheme:dark){:root{--bg:#13171c;--paper:#1b2127;--fg:#e5e8eb;--muted:#99a3ad;--line:#2d353e;--accent:#8fb9e2;--accent-soft:#1e2d3c;--th:#222a32;--soft0:#232a31;--soft1:#1e2d3c;--soft2:#1c3027;--soft3:#352c1c;--soft4:#3a2224;--soft5:#20262c;--burst:#8fb9e2;--burst-fg:#0f1418;--hi:#8fb9e2;--hi-fg:#0f1418;--md:#35506b;--lo:#20262c;color-scheme:dark}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font);font-size:15px;line-height:1.75}
 a{color:var(--accent)}
@@ -35,6 +35,26 @@ img{max-width:100%;height:auto;border-radius:6px;border:1px solid var(--line);di
 figure{margin:16px 0}figcaption{font-size:12.5px;color:var(--muted)}
 blockquote{margin:12px 0;padding:8px 14px;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 6px 6px 0}
 .meta{color:var(--muted);font-size:13px}
+
+.cal{border-collapse:separate;border-spacing:0;table-layout:fixed;min-width:2100px;font-size:12px;line-height:1.45}
+.cal th,.cal td{border:0;border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:6px 6px;vertical-align:top}
+.cal col.lab{width:132px}
+.cal th{background:var(--th);text-align:center;font-weight:600}
+.cal .rl{position:sticky;left:0;z-index:2;background:var(--paper);font-weight:600;white-space:normal;border-right:2px solid var(--line)}
+.cal .grp td.rl{background:var(--th)}
+.cal td.e{background:transparent}
+.cal td.seg{border-radius:0}
+.cal .c0{background:var(--soft0)}.cal .c1{background:var(--soft1)}.cal .c2{background:var(--soft2)}.cal .c3{background:var(--soft3)}.cal .c4{background:var(--soft4)}.cal .ao{background:var(--soft5)}
+.cal .b{background:var(--burst);color:var(--burst-fg);font-weight:600}
+.cal .si{text-align:center;font-family:var(--data);font-weight:600}
+.cal .hi{background:var(--hi);color:var(--hi-fg)}.cal .md{background:var(--md)}.cal .lo{background:var(--lo);color:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:12.5px;color:var(--muted);margin:6px 0 2px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-2px;margin-right:5px}
+.bars{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:6px;align-items:end;height:150px;margin:14px 0 4px;padding:0 2px}
+.bars div{display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%;font-size:11.5px;font-family:var(--data)}
+.bars span.v{width:100%;border-radius:4px 4px 0 0;background:var(--md)}
+.bars span.v.hi{background:var(--accent)}.bars span.v.lo{background:var(--line)}
+.bars b{font-weight:600;margin-bottom:3px}.bars em{font-style:normal;color:var(--muted);margin-top:3px}
 .shell.one{grid-template-columns:minmax(0,1040px);justify-content:center}
 @media (max-width:900px){.shell{grid-template-columns:1fr}.toc{display:none}main{padding:24px 18px}}
 </style></head><body>
@@ -53,89 +73,30 @@ blockquote{margin:12px 0;padding:8px 14px;border-left:3px solid var(--accent);ba
 <li><a href="#bowflex">Bowflex</a></li>
 </ul></li>
 <li><a href="#四营销节奏表">四、营销节奏表</a></li>
-<li><a href="#五media-plan">五、Media Plan</a></li>
+<li><a href="#五media-plan">五、Media Plan</a>
+<ul><li><a href="#红人分层">红人分层</a></li><li><a href="#渠道分层">渠道分层与重点</a></li></ul></li>
 <li><a href="#六campaign-playbook">六、Campaign Playbook</a>
 <ul>
-<li><a href="#campaign-1drop-it预热">Campaign 1：Drop It（预热）</a></li>
-<li><a href="#campaign-2home-gym爆发">Campaign 2：Home Gym（爆发）</a></li>
-<li><a href="#campaign-3the-last-one长尾">Campaign 3：The Last One（长尾）</a></li>
+<li><a href="#campaign-1drop-it预售">C1：Drop It（全款预售）</a></li>
+<li><a href="#campaign-2home-gym开售">C2：Home Gym（到货开售）</a></li>
+<li><a href="#campaign-3prime-day">C3：Prime Day &amp; Fall Prime</a></li>
+<li><a href="#campaign-4bfcm-2027">C4：BFCM 2027</a></li>
 </ul></li>
 <li><a href="#待决策事项">待决策事项</a></li>
 <li><a href="#参考来源">参考来源</a></li>
 </ul></li>
-</ul></nav><main><h1 id="merach-p19-整合营销方案">MERACH P19
-整合营销方案</h1>
-<p class="meta">2026-11-12 · Cristobal</p>
-<p>P19 计划于 2027 年 2 月在美国、德国上市，首季目标 2,000 台。本方案承接《MERACH P19 产品营销方案》的主张、卖点与人群定义，按“预热建信 → 爆发放量 → 长尾沉淀”三个阶段推进；首年目标的合理性见《P19 线上市场容量》。</p>
+</ul></nav><main><h1 id="merach-p19-整合营销方案">MERACH P19 整合营销方案</h1>
+<p class="meta">2026-11-19（按产品营销方案与季节指数刷新） · Cristobal</p>
+<p>P19 大货预计 2027 年 2 月 15 日到港，美国、德国上市。本方案承接《MERACH P19 产品营销方案》的主张、三支柱与人群，按美国季节指数安排节奏：12 月至次年 2 月是全年最高峰，6–7 月为次高峰，11–12 月为 BFCM 与礼品季。12 月至 2 月 14 日为全款预售期，2 月 15 日到货即发货。首年目标的合理性见《P19 线上市场容量》与《P19 美国 DTC 流量与转化测算》。</p>
 <h2 id="一campaign-big-idea">一、Campaign Big Idea</h2>
-<p><strong>承接产品营销方案的三项输出：</strong>一是主张与信任支点，产品主张为“耐摔、不易坏的可调哑铃”，信任支点为 CNC 精加工 + 核心传动轴热处理（工厂已确认）；二是人群，美国以 Garage Gym 中高收入居家健身人群（P1a）为主攻，增肌训练者（P1b）保留覆盖；三是卖点金字塔，所有对外说法只从金字塔中取用。英文主张待副总确认，建议 Built to Take the Drop。</p>
-<p>策略方向：以“工艺质感 + 耐摔证据”占领心智，让 P19 成为配得上居家健身空间的器材；Drop Set 作为训练场景内容覆盖 P1b，不再作为唯一主线。继续避开竞品已占据的“设计感”（NÜO）、“品牌”（REP / Nike）与“低价”（Bowflex）赛道。</p>
-<div class="tw"><table>
-<thead><tr class="header"><th>层级</th><th>英文</th><th>中文</th><th>在 Campaign 中的作用</th></tr></thead>
-<tbody>
-<tr class="odd"><td>产品主张</td><td>待定（建议 Built to Take the Drop）</td><td>耐摔、不易坏的可调哑铃</td><td>Campaign 主标题、KV、产品页与教育页首屏</td></tr>
-<tr class="even"><td>信任支点</td><td>Precision-Machined. Heat-Treated.</td><td>CNC 精加工、核心传动轴热处理</td><td>解释为什么耐摔、为什么值这个价</td></tr>
-<tr class="odd"><td>情绪价值</td><td>—</td><td>属于自己的私人训练空间，器材耐用、配得上家里的环境</td><td>P1a 主线内容：居家健身空间实拍、开箱与长期使用</td></tr>
-<tr class="even"><td>训练场景</td><td>Built for the Drop Set</td><td>为递减组而生</td><td>训练类创作者内容，覆盖 P1b</td></tr>
-</tbody></table></div>
-<p><strong>人群承接</strong></p>
-<div class="tw"><table>
-<thead><tr class="header"><th>人群</th><th>优先级</th><th>核心信息</th><th>主打内容</th><th>主力触点</th></tr></thead>
-<tbody>
-<tr class="odd"><td>P1a 美国 Garage Gym · 中高收入居家健身人群（35+，HHI $100k+）</td><td>主攻</td><td>工艺与质感配得上你的居家健身空间；耐摔、用得久</td><td>居家健身空间实拍、工艺讲解（精加工、热处理、电镀）、长期使用测评</td><td>GGR、BarBend、YouTube 长测评；Instagram 居家健身空间内容；Reddit r/homegym；HomeGymCon</td></tr>
-<tr class="even"><td>P1b 美国 Garage Gym · 增肌训练者</td><td>次要，保留覆盖</td><td>Drop the weight, not the set.</td><td>递减组实练、换重计时</td><td>YouTube、TikTok 训练类创作者（不单独主投）</td></tr>
-<tr class="odd"><td>P2 德国 Homegym 力量训练者</td><td>核心</td><td>Massiver Stahl. Gebaut für Drop Sets.</td><td>测试报告、工艺与认证、德语测评</td><td>Amazon.de、测评比价站、德语 YouTube、FIBO</td></tr>
-<tr class="even"><td>P3 城市小户型训练者</td><td>次要</td><td>One pair. Every weight.</td><td>一副替代整排、收纳与静音</td><td>Amazon 搜索、Instagram / TikTok 家居健身内容</td></tr>
-<tr class="odd"><td>P4 女性与入门力量训练者</td><td>次要（增长型）</td><td>Start light. Go further.</td><td>小重量档位、日常训练</td><td>Instagram、TikTok 女性健身博主</td></tr>
-<tr class="even"><td>P5 Bowflex 替换用户</td><td>机会型</td><td>Locks tight. No sag.</td><td>锁固结构展示（不点名竞品）</td><td>搜索关键词承接</td></tr>
-</tbody></table></div>
-<p>三个阶段的内容重点：</p>
-<ol type="1">
-<li><strong>预热期：耐摔证据与工艺。</strong> 日常场景跌落测试、工艺讲解（精加工、热处理、电镀）。</li>
-<li><strong>爆发期：居家空间与工艺质感为主线。</strong> P1a 居家健身空间实拍与长期使用测评；Drop Set 训练内容同步覆盖 P1b。</li>
-<li><strong>长尾期：用得久。</strong> 电镀不掉漆、质保与用户口碑。</li>
-</ol>
-<p>对外使用前需完成：英文主张确认、商标检索、母语者理解测试、正式跌落测试报告与质保政策。耐摔类表述须注明测试条件与正常使用场景，不引导用户故意摔打。</p>
+<p><strong>承接产品营销方案的输出：</strong></p>
+<div class="tw"><table><thead><tr class="header"><th>层级</th><th>英文</th><th>中文</th><th>在 Campaign 中的作用</th></tr></thead><tbody><tr><td>产品主张</td><td>Built to Take the Drop.</td><td>耐摔、不易坏的可调哑铃</td><td>Campaign 主标题、KV、产品页与教育页首屏</td></tr><tr><td>信任支点</td><td>—</td><td>按汽车零部件的工艺标准制造：CNC 精加工、42CrMo 传动轴热处理、镍铬电镀</td><td>解释为什么耐摔、为什么值这个价</td></tr><tr><td>三支柱</td><td>Durable / Accurate / Easy</td><td>耐摔 / 高精度（调多少就是多少，两只一样重）/ 易用（单手一推快调）</td><td>教育页三屏、红人 Brief 三个必讲点、广告素材分组</td></tr><tr><td>情绪价值</td><td>—</td><td>属于自己的私人训练空间，器材耐用、配得上家里的环境</td><td>P1a 主线内容：居家健身空间实拍、长期使用</td></tr><tr><td>训练场景</td><td>Built for the Drop Set</td><td>为递减组而生</td><td>训练类红人内容，覆盖 P1b</td></tr></tbody></table></div><p>策略方向：以“工艺质感 + 耐摔证据”占领心智，避开竞品已占据的“设计感”（NÜO）、“品牌”（REP / Nike）与“低价”（Bowflex）赛道。对外用语按产品营销方案中的“对外用语参考”，工艺参数只作证据，不进标题。</p>
+<p><strong>人群承接</strong>（规模见产品营销方案“大圈套小圈”）</p>
+<div class="tw"><table><thead><tr class="header"><th>人群</th><th>规模（估算）</th><th>优先级</th><th>核心信息</th><th>主力触点</th></tr></thead><tbody><tr><td>P1a 美国 Garage Gym · 中高收入居家健身人群（35+，HHI $100k+）</td><td>约 1,000 万户</td><td>主攻</td><td>工艺与质感配得上你的居家健身空间；耐摔、用得久</td><td>YouTube 长测评、生活切面大号、Instagram 居家健身空间、Reddit r/homegym、EDM（老用户）</td></tr><tr><td>P1b 增肌训练者</td><td>待估</td><td>次要，保留覆盖</td><td>Drop the weight, not the set.</td><td>YouTube / TikTok 训练类红人</td></tr><tr><td>P2 德国 Homegym 力量训练者</td><td>待验证</td><td>核心（德国）</td><td>Gebaut, um Stürze auszuhalten.（德语主张待母语确认）</td><td>Amazon.de、测评比价站、德语 YouTube、FIBO</td></tr><tr><td>P3 城市小户型训练者</td><td>上限约 1,400 万户</td><td>次要</td><td>One pair. Every weight.</td><td>Amazon 搜索、Instagram / TikTok 家居健身</td></tr><tr><td>P4 女性与入门</td><td>待估</td><td>次要（增长型）</td><td>5 lb increments. Start light.</td><td>Instagram、TikTok 女性健身红人</td></tr><tr><td>P5 Bowflex 替换</td><td>上限约 370 万户</td><td>机会型</td><td>Locks tight. No sag.</td><td>搜索关键词承接（不点名竞品）</td></tr></tbody></table></div><p>对外使用前需完成：商标检索、正式跌落测试报告与质保政策；耐摔类表述须注明测试条件，不引导用户故意摔打。</p>
 <h2 id="二阶段划分">二、阶段划分</h2>
-<p>三个阶段各自只服务一个目标：预热期建立信任，爆发期完成首季销量，长尾期沉淀口碑并在大促收割。上市具体日期待确认，下表按“2027
-年 2 月上市”倒推。</p>
-<div class="tw"><table>
-<thead>
-<tr class="header">
-<th>阶段</th>
-<th>时间</th>
-<th>阶段目标</th>
-<th>内容重点</th>
-<th>主力渠道</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>预热</td>
-<td>2026 年 12 月中 – 上市前一日</td>
-<td>上市当周测评与创作者内容就位；积累预约订阅名单</td>
-<td>Drop it：跌落测试预告、Coming Soon 页面</td>
-<td>测评寄样、创作者拍摄、独立站预约页、EDM</td>
-</tr>
-<tr class="even">
-<td>爆发</td>
-<td>上市日 – 2027 年 3 月底</td>
-<td>首季 2,000 台</td>
-<td>Home gym：居家健身空间实拍、工艺讲解、测评集中上线；Drop set：递减组训练内容</td>
-<td>创作者、付费社媒、搜索广告、PR</td>
-</tr>
-<tr class="odd">
-<td>长尾</td>
-<td>2027 年 4–12 月</td>
-<td>沉淀评价与口碑，支撑 2027FY 8,000 台</td>
-<td>Drop money once：用户证言、UGC、大促</td>
-<td>Always-on 广告、联盟、Reddit、EDM、展会</td>
-</tr>
-</tbody>
-</table></div>
-<p>预热期不对外公布价格与产品全貌，以跌落测试制造悬念；德国若晚于美国上市，德国的爆发期顺延。</p>
-<p>两个市场同一主张、同一节奏，德国在表述上偏重耐用与认证；上市当周独立站与
-Amazon 同步上线上市优惠。</p>
+<p><strong>依据：美国季节指数</strong>（Google Trends 美国，dumbbells 与 adjustable dumbbells，2022–2025 年同月平均，月均 = 1.00；来源为《P19 美国 DTC 流量与转化测算》）。1 月最高，12 月、11 月、2 月其次；6–7 月为次高峰；9–10 月为全年低点。德国同样是 1 月最高（1.26）、9–10 月最低（约 0.89）。</p>
+<div class="bars" aria-label="美国季节指数"><div><b>1.20</b><span class="v hi" style="height:91%"></span><em>1 月</em></div><div><b>1.05</b><span class="v " style="height:64%"></span><em>2 月</em></div><div><b>0.99</b><span class="v " style="height:53%"></span><em>3 月</em></div><div><b>0.94</b><span class="v " style="height:44%"></span><em>4 月</em></div><div><b>0.91</b><span class="v " style="height:38%"></span><em>5 月</em></div><div><b>1.01</b><span class="v " style="height:56%"></span><em>6 月</em></div><div><b>1.04</b><span class="v " style="height:62%"></span><em>7 月</em></div><div><b>0.95</b><span class="v " style="height:45%"></span><em>8 月</em></div><div><b>0.84</b><span class="v lo" style="height:25%"></span><em>9 月</em></div><div><b>0.83</b><span class="v lo" style="height:24%"></span><em>10 月</em></div><div><b>1.09</b><span class="v hi" style="height:71%"></span><em>11 月</em></div><div><b>1.15</b><span class="v hi" style="height:82%"></span><em>12 月</em></div></div><p>据此分为四个 Campaign，Campaign 之间为 Always-on：</p>
+<div class="tw"><table><thead><tr class="header"><th>阶段</th><th>时间</th><th>季节指数</th><th>单一目标</th><th>内容重点</th><th>主力渠道</th></tr></thead><tbody><tr><td>准备期</td><td>2026 年 11 月</td><td>1.09</td><td>预售开启前，自制素材、预售页、红人寄样全部就位</td><td>跌落测试、工厂短片、称重测试、3D 爆炸图</td><td>—</td></tr><tr><td><b>C1 Drop It</b>（全款预售）</td><td>2026-12-01 – 2027-02-14</td><td>1.15 / 1.20 / 1.05</td><td><b>最低成本覆盖全部目标人群一次</b>；次目标：预售转化，测算转化率与 UV，校准备货</td><td><b>自制素材为主</b>（用户尚未收货）；预售优惠：$799→$699、赠哑铃底座（价值 $199）、2/15 到货即发</td><td>付费社媒广覆盖、生活切面大号、EDM 老用户、Explore 教育页</td></tr><tr><td><b>C2 Home Gym</b>（到货开售）</td><td>2027-02-15 – 03-31</td><td>1.05 / 0.99</td><td><b>卖到首销目标台数</b>（2,000 台，待确认）</td><td>红人测评与开箱集中上线、居家空间实拍、Power Users、Drop Set 训练</td><td>红人、转化广告、再营销、搜索、Amazon、PR</td></tr><tr><td>Always-on 培育</td><td>2027 年 4–6 月上旬</td><td>0.94 / 0.91</td><td>评价与 UGC 积累</td><td>用户证言、UGC、P4 / P3 内容</td><td>用户运营、EDM、联盟、FIBO（德国）</td></tr><tr><td><b>C3 Prime Day &amp; Fall Prime</b></td><td>2027 年 6 月下旬 – 7 月；10 月</td><td>1.01 / 1.04；0.83</td><td>夏季次高峰放量；10 月为 BFCM 蓄水</td><td>大促优惠、套装（哑铃 + 哑铃架）</td><td>Amazon、付费社媒、EDM</td></tr><tr><td>Always-on 淡季</td><td>2027 年 8–9 月</td><td>0.95 / 0.84</td><td>控预算，测试新素材</td><td>秋季训练内容</td><td>内容、用户运营</td></tr><tr><td><b>C4 BFCM 2027</b></td><td>2027-11 – 2028-01</td><td>1.09 / 1.15 / 1.20</td><td>全年销量最高峰；接新年健身季</td><td>礼品、套装、长期使用口碑</td><td>全渠道</td></tr></tbody></table></div><p>预售期合规：预售页与订单确认中写明发货时间（2 月 15 日起）；若到货延期，须按美国 FTC Mail Order Rule 及时通知并提供取消退款选项。德国上市日期待确认，节奏可顺延。</p>
 <h2 id="三竞品营销打法">三、竞品营销打法</h2>
 <p>五家竞品各占一个心智点，但尚无品牌把训练场景作为主张；品类共同的成交逻辑是“测评评分
 + 跌落高度 + 质保年限”。</p>
@@ -277,223 +238,57 @@ inches”，铸铁底座与燕尾槽配重片。</li>
 以低价品牌为主，高端主要只有 NÜO。</li>
 </ol>
 <h2 id="四营销节奏表">四、营销节奏表</h2>
-<p>Always-on 自上市起全年不断，负责拦截需求与沉淀用户；Burst
-集中在上市、展会与大促六个节点，负责拉高声量与销量。</p>
-<p><strong>Always-on 动作（上市后全年）：</strong> Amazon Ads 与 Google
-Search、Meta 再营销、测评联盟、EDM、Reddit
-社群答疑、每月常态创作者内容。</p>
-<div class="tw"><table>
-<thead>
-<tr class="header">
-<th>月份</th>
-<th>阶段</th>
-<th>Burst：美国</th>
-<th>Burst：德国</th>
-<th>Always-on 重点</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>2026 年 12 月</td>
-<td>预热</td>
-<td>—</td>
-<td>—</td>
-<td>测评寄样、创作者签约与 Brief、物料制作</td>
-</tr>
-<tr class="even">
-<td>2027 年 1 月</td>
-<td>预热</td>
-<td>Coming Soon 页与预约；跌落测试预告</td>
-<td>德语创作者寄测</td>
-<td>创作者内容交付；广告素材准备；预约邮件</td>
-</tr>
-<tr class="odd">
-<td>2027 年 2 月</td>
-<td>爆发</td>
-<td><strong>上市</strong>：测评集中上线、创作者内容放量、PR 发稿</td>
-<td><strong>上市</strong>（日期待确认）</td>
-<td>全部 Always-on 启动</td>
-</tr>
-<tr class="even">
-<td>2027 年 3 月</td>
-<td>爆发</td>
-<td>创作者内容持续在线；测评再投放</td>
-<td>德语测评上线</td>
-<td>按转化数据调整广告结构</td>
-</tr>
-<tr class="odd">
-<td>2027 年 4 月</td>
-<td>长尾</td>
-<td>Drop Set Challenge 启动</td>
-<td><strong>FIBO 2027</strong>（4 月 8–11 日，科隆）</td>
-<td>UGC 收集与授权</td>
-</tr>
-<tr class="even">
-<td>2027 年 5–6 月</td>
-<td>长尾</td>
-<td>HomeGymCon（日期待确认）</td>
-<td>—</td>
-<td>评价积累、用户证言</td>
-</tr>
-<tr class="odd">
-<td>2027 年 7 月</td>
-<td>长尾</td>
-<td><strong>Prime Day</strong></td>
-<td><strong>Prime Day</strong></td>
-<td>大促前素材更新</td>
-</tr>
-<tr class="even">
-<td>2027 年 8–9 月</td>
-<td>长尾</td>
-<td>—</td>
-<td>—</td>
-<td>常态投放；秋季训练内容</td>
-</tr>
-<tr class="odd">
-<td>2027 年 10 月</td>
-<td>长尾</td>
-<td><strong>Prime Big Deal Days</strong></td>
-<td><strong>Prime Big Deal Days</strong></td>
-<td>节日礼品内容准备</td>
-</tr>
-<tr class="even">
-<td>2027 年 11 月</td>
-<td>长尾</td>
-<td><strong>Black Friday / Cyber Monday</strong></td>
-<td><strong>Black Friday / Cyber Monday</strong></td>
-<td>套装（哑铃 + 哑铃架）主推</td>
-</tr>
-<tr class="odd">
-<td>2027 年 12 月</td>
-<td>长尾</td>
-<td>圣诞礼品</td>
-<td>圣诞礼品</td>
-<td>年度复盘</td>
-</tr>
-</tbody>
-</table></div>
-<p>Prime Day 与 Prime Big Deal Days 的具体日期以 Amazon 公布为准。</p>
+<p>横向为时间（2026 年 11 月至 2028 年 1 月，每月分上下半月），纵向分 Burst 与 Always-on，并标出每段的主攻人群与 O5A 漏斗重点。预售期以覆盖为主、转化率不追高；到季节高峰与到货开售时再拉高转化。</p>
+<div class="legend"><span><i style="background:var(--hi)"></i>季节指数 ≥ 1.09</span><span><i style="background:var(--md)"></i>1.00–1.08</span><span><i style="background:var(--lo);border:1px solid var(--line)"></i>&lt; 1.00</span><span><i style="background:var(--burst)"></i>Burst 节点</span><span>每月分上下半月两格；表格可左右滑动</span></div><div class="tw"><table class="cal"><colgroup><col class="lab"><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col></colgroup><tbody><tr><th class="rl">月份</th><th colspan="2">2026-11</th><th colspan="2">2026-12</th><th colspan="2">2027-01</th><th colspan="2">2027-02</th><th colspan="2">2027-03</th><th colspan="2">2027-04</th><th colspan="2">2027-05</th><th colspan="2">2027-06</th><th colspan="2">2027-07</th><th colspan="2">2027-08</th><th colspan="2">2027-09</th><th colspan="2">2027-10</th><th colspan="2">2027-11</th><th colspan="2">2027-12</th><th colspan="2">2028-01</th></tr><tr><td class="rl">美国季节指数<br><span style="font-weight:400;color:var(--muted)">月均 = 1.00</span></td><td colspan="2" class="si hi">1.09</td><td colspan="2" class="si hi">1.15</td><td colspan="2" class="si hi">1.20</td><td colspan="2" class="si md">1.05</td><td colspan="2" class="si lo">0.99</td><td colspan="2" class="si lo">0.94</td><td colspan="2" class="si lo">0.91</td><td colspan="2" class="si md">1.01</td><td colspan="2" class="si md">1.04</td><td colspan="2" class="si lo">0.95</td><td colspan="2" class="si lo">0.84</td><td colspan="2" class="si lo">0.83</td><td colspan="2" class="si hi">1.09</td><td colspan="2" class="si hi">1.15</td><td colspan="2" class="si hi">1.20</td></tr><tr><td class="rl">阶段 / Campaign</td><td class="seg c0" colspan="2">准备期：自制素材、预售页、寄样</td><td class="seg c1" colspan="5"><b>C1 Drop It</b>｜全款预售（12/1–2/14）：最低成本覆盖目标人群一次</td><td class="seg c2" colspan="3"><b>C2 Home Gym</b>｜2/15 到货开售：卖到首销目标</td><td class="seg ao" colspan="5">Always-on 培育：评价、UGC、用户运营</td><td class="seg c3" colspan="3"><b>C3 Prime Day</b>｜夏季次高峰</td><td class="seg ao" colspan="4">Always-on：淡季控预算、测试素材</td><td class="seg c3" colspan="2"><b>C3 Fall Prime</b>｜BFCM 预热</td><td class="seg c4" colspan="6"><b>C4 BFCM 2027</b>｜全年最高峰，延续至新年健身季</td></tr><tr class="grp"><td class="rl">人群与 O5A 漏斗</td><td colspan="30" style="background:var(--th)"></td></tr><tr><td class="rl">主攻人群</td><td class="e"></td><td class="e"></td><td class="seg c1" colspan="5">P1a（约 1,000 万户）为主；MERACH 老用户（$199 Home Gym 客群）</td><td class="seg c2" colspan="3">P1a + P1b（Drop Set）</td><td class="seg ao" colspan="5">P4 女性与入门、P3 城市小户型</td><td class="seg c3" colspan="3">P1a + P3（Amazon 搜索）</td><td class="seg ao" colspan="6">P1a 再触达、P5 Bowflex 替换</td><td class="seg c4" colspan="6">全部人群 + 礼品购买者</td></tr><tr><td class="rl">O5A 重点</td><td class="e"></td><td class="e"></td><td class="seg c1" colspan="5"><b>A1 Aware</b>：Reach ≥ 1,000 万人、频次 1–2，按千次曝光成本控制；A3 Ask：预售页 UV；转化率预计偏低（约 0.3–0.5%），用于测算</td><td class="seg c2" colspan="3"><b>A3 → A4 Act</b>：转化率拉升至 ≥ 0.75%；再营销预售期访客与加购未付款用户</td><td class="seg ao" colspan="5"><b>A5 Advocate</b>：评价、UGC、推荐；A1 维持低成本触达</td><td class="seg c3" colspan="3"><b>A4 Act</b>：大促转化；A1 新客补充</td><td class="seg ao" colspan="4">A2 Appeal / A3 Ask：内容种草，为 Q4 蓄水</td><td class="seg c3" colspan="2">A3 → A4</td><td class="seg c4" colspan="6"><b>A4 Act</b>：全年最高转化；A5 礼品与推荐</td></tr><tr class="grp"><td class="rl">Burst</td><td colspan="30" style="background:var(--th)"></td></tr><tr><td class="rl">Burst · 美国</td><td class="e"></td><td class="e"></td><td class="seg b" colspan="2">全款预售开启：$799→$699 + 赠哑铃底座；Holiday</td><td class="seg b" colspan="2">New Year 健身季（1.20）</td><td class="seg b" colspan="2">2/15 到货发货 · Presidents’ Day · 测评集中上线</td><td class="e"></td><td class="e"></td><td class="e"></td><td class="e"></td><td class="seg b" colspan="2">Memorial Day</td><td class="seg b" colspan="2">Father’s Day · HomeGymCon（待确认）</td><td class="seg b" colspan="2">Prime Day</td><td class="e"></td><td class="e"></td><td class="seg b" colspan="2">Labor Day</td><td class="seg b" colspan="2">Prime Big Deal Days</td><td class="seg b" colspan="2">BFCM（11/26–29）</td><td class="seg b" colspan="2">Holiday 礼品</td><td class="seg b" colspan="2">New Year</td></tr><tr><td class="rl">Burst · 德国</td><td class="e"></td><td class="e"></td><td class="e"></td><td class="e"></td><td class="e"></td><td class="e"></td><td class="seg b" colspan="2">上市（日期待确认）</td><td class="e"></td><td class="e"></td><td class="seg b" colspan="2">FIBO（4/8–11）</td><td class="e"></td><td class="e"></td><td class="e"></td><td class="e"></td><td class="seg b" colspan="2">Prime Day</td><td class="e"></td><td class="e"></td><td class="e"></td><td class="e"></td><td class="e"></td><td class="e"></td><td class="seg b" colspan="2">Black Friday</td><td class="seg b" colspan="2">Weihnachten</td><td class="seg b" colspan="2">Neujahr（1.26）</td></tr><tr class="grp"><td class="rl">Always-on</td><td colspan="30" style="background:var(--th)"></td></tr><tr><td class="rl">内容素材</td><td class="seg c1" colspan="7"><b>自制素材为主</b>（用户尚未收货）：跌落测试、工厂短片、称重测试、3D 爆炸图、创始团队讲解；头部达人背书用自制素材撬动</td><td class="seg c2" colspan="3">红人测评与开箱集中上线；Power Users 视频</td><td class="seg ao" colspan="14">UGC 与红人常态内容；大促节点更新素材</td><td class="seg c4" colspan="6">礼品、套装与长期使用内容</td></tr><tr><td class="rl">付费媒体</td><td class="e"></td><td class="e"></td><td class="seg c1" colspan="5">Meta / TikTok / YouTube 以覆盖为目标（Reach、ThruPlay）；Google 品牌词；转化系列小预算测算</td><td class="seg c2" colspan="3">转化系列放量；再营销；Amazon 上架与广告</td><td class="seg ao" colspan="5">维持；按 ROAS 收缩</td><td class="seg c3" colspan="3">PD 加预算</td><td class="seg ao" colspan="4">淡季降预算</td><td class="seg c3" colspan="2">蓄水</td><td class="seg c4" colspan="6">全年最高预算</td></tr><tr><td class="rl">用户运营 / UGC / 评论区</td><td class="e"></td><td class="e"></td><td class="seg ao" colspan="28">贯穿全年：广告与红人内容评论区维护与答疑；Reddit r/homegym；Power Users 社群；收货后评价邀请与 UGC 征集（2/15 起）；差评 48 小时内响应</td></tr><tr><td class="rl">EDM</td><td class="e"></td><td class="seg c1" colspan="6"><b>老用户转化</b>：$199 Home Gym 客群教育序列（工艺、耐摔、称重）→ 预售优惠</td><td class="seg c2" colspan="3">发货通知、开箱与使用引导、评价邀请</td><td class="seg ao" colspan="14">复购与配件（微调片、哑铃架）；大促提醒</td><td class="seg c4" colspan="6">BFCM 与礼品序列</td></tr></tbody></table></div><p><strong>O5A 口径：</strong>A1 Aware 看覆盖人数与千次曝光成本；A2 Appeal 看视频完播与互动；A3 Ask 看教育页与产品页 UV、加购；A4 Act 看订单与转化率；A5 Advocate 看评价、UGC 与推荐。覆盖 1,000 万人对应 P1a 约 1,000 万户的规模，预售期转化率 0.3–0.5% 与开售后 ≥ 0.75% 均为建议值，以 C1 实测数据校准（美国 DTC 测算表按 0.75% 计）。Prime Day、Prime Big Deal Days 与 HomeGymCon 日期以官方公布为准。</p>
 <h2 id="五media-plan">五、Media Plan</h2>
-<p>媒体按人群分工：P1a 以测评长内容与居家空间内容建立信任，P1b 与 P4 以训练类短视频覆盖，搜索与电商广告承接主动需求。</p>
-
-<div class="tw"><table>
-<thead>
-<tr class="header">
-<th>媒体</th>
-<th>角色</th>
-<th>美国打法</th>
-<th>德国打法</th>
-<th>衡量指标</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>红人</td>
-<td>主流量来源；场景化讲解</td>
-<td>YouTube 长测评与 Instagram 居家健身空间内容（P1a）；TikTok / Instagram 训练短视频（P1b、P4）；优质内容用 Partnership Ads 放大</td>
-<td>德语垂类测评博主优先</td>
-<td>UV、内容转化率、单条成本</td>
-</tr>
-<tr class="even">
-<td>PR</td>
-<td>上市声量与第三方背书</td>
-<td>GGR、BarBend 等测评媒体；英文新闻稿</td>
-<td>德文新闻稿；测评比价站</td>
-<td>报道数、测评评分</td>
-</tr>
-<tr class="odd">
-<td>Social（付费）</td>
-<td>放大内容、再营销</td>
-<td>Meta / TikTok Ads</td>
-<td>Meta Ads</td>
-<td>CTR、CPA、ROAS</td>
-</tr>
-<tr class="even">
-<td>Social（Reddit）</td>
-<td>口碑与答疑</td>
-<td>r/homegym 等社区官方账号答疑；Reddit Ads 小量测试</td>
-<td>—</td>
-<td>提及量、情感倾向</td>
-</tr>
-<tr class="odd">
-<td>搜索与电商广告</td>
-<td>拦截主动需求</td>
-<td>Amazon Ads、Google Search / Shopping</td>
-<td>Amazon.de Ads</td>
-<td>ACoS、转化率</td>
-</tr>
-<tr class="even">
-<td>EDM</td>
-<td>预约转化与老客复购</td>
-<td>Klaviyo 预约序列、上市通知、套装推荐</td>
-<td>德语邮件</td>
-<td>订阅数、邮件成交</td>
-</tr>
-<tr class="odd">
-<td>Event</td>
-<td>上手体验与行业曝光</td>
-<td>HomeGymCon</td>
-<td>FIBO 2027</td>
-<td>到场体验人数、留资数</td>
-</tr>
-</tbody>
-</table></div>
-<p>按 Earn / Paid / Own
-归类：测评媒体与创作者建立信任（Earn），搜索与付费社媒放大转化（Paid），独立站内容、EDM
-与品牌社媒账号沉淀用户（Own）；独立站与 Amazon
-作为所有媒体的成交承接端。补充说明：</p>
-<ul>
-<li><strong>测评联盟：</strong> GGR、BarBend、Garage Gym Lab
-以联盟佣金合作，目标是占位“best adjustable
-dumbbells”类搜索结果；德国对应测评比价站与德语健身媒体。</li>
-<li><strong>社群：</strong> 除 Reddit 外，美国覆盖 Facebook
-家用健身群组，德国覆盖德语健身论坛与群组。</li>
-<li><strong>搜索广告关键词：</strong> 品类词、竞品 ASIN 定向、bowflex
-alternative、safe adjustable dumbbells 等，广告文案不点名竞品。</li>
-<li><strong>线下：</strong> 属 Physical Brand Presence，美国评估
-HomeGymCon，德国以 FIBO 2027 为主节点。</li>
-</ul>
+<p>媒体分层：红人分三层，其余渠道按“覆盖 → 转化 → 沉淀”分工。<strong>重点是用户运营</strong>：UGC 培养与评论区维护贯穿全年，和 Always-on 联动；<strong>EDM 重点是 MERACH 老用户</strong>（已购约 $199 Home Gym 产品的客群）的教育与转化。</p>
+<h3 id="红人分层">红人分层</h3>
+<div class="tw"><table><thead><tr class="header"><th>层级</th><th>对象</th><th>作用</th><th>主要时段</th><th>合作方式</th></tr></thead><tbody><tr><td>T1 P1a 画像红人</td><td>Garage Gym / Home Gym 测评与居家健身空间博主（GGR、BarBend、Garage Gym Lab、YouTube 长测评、Instagram 空间类账号）</td><td>主信任来源；讲清三支柱</td><td>寄样在准备期完成，内容 2/15 后集中上线</td><td>寄样 + 内容费；测评站联盟佣金；优质内容做 Partnership Ads</td></tr><tr><td>T2 生活切面红人（破圈）</td><td>能触达 P1a 的非健身大号：汽车、DIY 与车库改造、户外、父亲与家庭生活类；超大体量账号如 YouTube 约千万订阅的 Jesse（具体账号待确认）</td><td>拓宽流量，触达不看健身内容的 P1a</td><td>C1 预售期为主（覆盖目标）</td><td>植入或定制内容；车库与工具场景天然匹配 Garage Gym</td></tr><tr><td>T3 头部背书</td><td>头部健身红人、教练或运动员</td><td>用自制素材（跌落测试、工厂短片）撬动转发、反应视频或短背书，降低合作门槛</td><td>C1 后半段至 C2</td><td>素材授权 + 背书费；Whitelisting 投放</td></tr><tr><td>T4 Power Users 与腰尾部</td><td>内测用户、腰尾部训练博主</td><td>真实使用证言与 UGC 来源</td><td>2/15 后全年</td><td>赠品或小额费用；FTC 披露</td></tr></tbody></table></div><h3 id="渠道分层">渠道分层与重点</h3>
+<div class="tw"><table><thead><tr class="header"><th>渠道</th><th>层级</th><th>重点</th><th>美国</th><th>德国</th><th>衡量指标</th></tr></thead><tbody><tr><td>付费社媒（Meta / TikTok / YouTube）</td><td>覆盖 → 转化</td><td>C1 以覆盖为目标（Reach、ThruPlay），低成本触达 1,000 万人；C2 起转化系列与再营销放量</td><td>三支柱素材分组测试</td><td>Meta</td><td>Reach、千次曝光成本、CTR、CPA、ROAS</td></tr><tr><td><b>用户运营 / UGC / 评论区</b></td><td>沉淀（重点）</td><td>广告与红人内容评论区答疑与引导；Power Users 社群；收货后评价邀请与 UGC 征集；差评 48 小时响应；与 Always-on 内容联动</td><td>Reddit r/homegym、Facebook 家用健身群组</td><td>德语论坛与群组</td><td>评价数与评分、UGC 数、评论区情感</td></tr><tr><td><b>EDM</b></td><td>转化（老用户）</td><td>$199 Home Gym 老用户：工艺、耐摔、称重教育序列 → 预售优惠；收货后使用引导与评价；复购配件与套装</td><td>Klaviyo 分群序列</td><td>德语邮件</td><td>打开率、点击率、邮件成交、老用户占比</td></tr><tr><td>搜索与电商</td><td>转化</td><td>拦截主动需求；Amazon 2/15 上架</td><td>Google Search / Shopping、Amazon Ads；品类词与 bowflex alternative 等</td><td>Amazon.de Ads</td><td>CVR、ACoS</td></tr><tr><td>PR 与测评媒体</td><td>信任</td><td>开售当周测评集中上线；新闻稿</td><td>GGR、BarBend</td><td>测评比价站、德文新闻稿</td><td>报道数、测评评分</td></tr><tr><td>联盟</td><td>转化</td><td>占位“best adjustable dumbbells”类搜索结果</td><td>测评站联盟</td><td>德语测评站</td><td>联盟成交</td></tr><tr><td>Event</td><td>信任</td><td>上手体验</td><td>HomeGymCon（待确认）</td><td>FIBO 2027</td><td>体验人数、留资</td></tr></tbody></table></div><p>按 Earn / Paid / Own 归类：红人与测评建立信任（Earn），付费社媒与搜索放大（Paid），教育页、EDM、评论区与社群沉淀用户（Own）；独立站与 Amazon 承接成交。</p>
 <h2 id="六campaign-playbook">六、Campaign Playbook</h2>
-<p>每个阶段一个
-Campaign、一个单一目标；所有动作只为这个目标服务，不达成则不进入下一阶段的放量。</p>
-<h3 id="campaign-1drop-it预热">Campaign 1：Drop It（预热）</h3>
+<p>每个 Campaign 一个主目标；未达成时先纠偏，再进入下一阶段放量。</p>
+<h3 id="campaign-1drop-it预售">Campaign 1：Drop It（全款预售，2026-12-01 – 2027-02-14）</h3>
 <ul>
-<li><strong>单一目标：</strong> 上市当周测评与创作者内容全部就位。</li>
-<li><strong>核心信息：</strong> 耐摔、不易坏的可调哑铃即将到来；精加工与热处理是耐摔的原因。</li>
-<li><strong>关键动作：</strong> 测评媒体与创作者寄样；创作者 Brief 与内容审核；Coming Soon 页与预约订阅；跌落测试与工艺讲解预告。</li>
-<li><strong>衡量指标：</strong> 寄样完成数、待上线内容数、预约订阅数。</li>
-<li><strong>前置条件：</strong> 正式跌落测试报告与视频、定价、质保政策。</li>
+<li><strong>主目标：</strong>以最低成本覆盖全部目标人群一次（P1a 约 1,000 万户，Reach ≥ 1,000 万人）。</li>
+<li><strong>次目标：</strong>预售转化；测算转化率、UV 与单 UV 成本；按预售数据校准备货与 2 月后的投放预算。</li>
+<li><strong>核心信息：</strong>Built to Take the Drop. 预售价 $699（原价 $799），赠哑铃底座（价值 $199），2 月 15 日到货即发。</li>
+<li><strong>关键动作：</strong>自制素材为主（跌落测试、工厂短片、称重测试、3D 爆炸图）；付费社媒以覆盖为目标投放；T2 生活切面大号破圈；用自制素材撬动 T3 头部背书；EDM 老用户教育与预售转化；Explore 教育页与产品页上线；T1 红人寄样，内容留到 2/15 后上线。</li>
+<li><strong>衡量指标：</strong>Reach、千次曝光成本、UV、预售订单与转化率、老用户成交占比、预售量与备货比。</li>
+<li><strong>前置条件：</strong>跌落测试视频、工厂短片、预售页与退款政策、预售价格与赠品确认。</li>
 </ul>
-<h3 id="campaign-2home-gym爆发">Campaign 2：Home Gym（爆发）</h3>
+<h3 id="campaign-2home-gym开售">Campaign 2：Home Gym（到货开售，2027-02-15 – 03-31）</h3>
 <ul>
-<li><strong>单一目标：</strong> 首季 2,000 台。</li>
-<li><strong>核心信息：</strong> P1a——工艺与质感配得上你的居家健身空间，耐摔、用得久；P1b——不用放回底座，单侧一次换重，递减组不中断。</li>
-<li><strong>关键动作：</strong> 测评集中上线；创作者内容滚动发布，以居家空间与工艺内容为主、递减组训练内容为辅；优质内容用 Partnership Ads 放大；Amazon 与 Google 拦截搜索；PR 发稿；预约用户邮件转化。</li>
-<li><strong>衡量指标：</strong> 销量、转化率、单台获客成本、测评评分、内容互动。</li>
-<li><strong>纠偏规则：</strong> 若转化率偏低，优先优化落地页与评价，而非加大流量；若 P1a 内容转化明显弱于 P1b，及时调整内容配比。</li>
+<li><strong>主目标：</strong>卖到首销目标台数（2,000 台，待确认）。</li>
+<li><strong>核心信息：</strong>P1a：工艺与质感配得上你的居家健身空间；P1b：Drop the weight, not the set.</li>
+<li><strong>关键动作：</strong>预售订单 2/15 起发货；T1 测评与开箱集中上线；Presidents' Day（2/15）节点；转化系列放量与预售期访客再营销；Amazon 上架；PR 发稿；评价邀请。</li>
+<li><strong>衡量指标：</strong>销量、转化率、单台获客成本、测评评分、评价数。</li>
+<li><strong>纠偏规则：</strong>转化率偏低时先优化产品页与评价，不先加流量；P1a 内容转化明显弱于 P1b 时调整内容配比。</li>
 </ul>
-<h3 id="campaign-3the-last-one长尾">Campaign 3：The Last One（长尾）</h3>
+<h3 id="campaign-3prime-day">Campaign 3：Prime Day &amp; Fall Prime（2027 年 6 月下旬 – 7 月；10 月）</h3>
 <ul>
-<li><strong>单一目标：</strong> 沉淀评价与用户证言，支撑 2027FY 8,000 台。</li>
-<li><strong>核心信息：</strong> 买一次，用多年。</li>
-<li><strong>关键动作：</strong> 征集用户居家健身空间与 Drop Set 训练 UGC；FIBO 2027 与 HomeGymCon；Prime Day、Prime Big Deal Days、BFCM 大促；哑铃 + 哑铃架套装；Reddit 社群答疑。</li>
-<li><strong>衡量指标：</strong> 评价数与评分、UGC 数量、套装占比、大促销量。</li>
+<li><strong>主目标：</strong>夏季次高峰放量；10 月 Fall Prime 为 BFCM 蓄水。</li>
+<li><strong>关键动作：</strong>Amazon 大促；哑铃 + 哑铃架套装；Father's Day 礼品；UGC 素材投放；EDM 大促提醒。</li>
+<li><strong>衡量指标：</strong>大促销量、套装占比、ACoS。</li>
+</ul>
+<h3 id="campaign-4bfcm-2027">Campaign 4：BFCM 2027（2027 年 11 月 – 2028 年 1 月）</h3>
+<ul>
+<li><strong>主目标：</strong>全年销量最高峰，并承接 2028 年新年健身季。</li>
+<li><strong>关键动作：</strong>BFCM 优惠与套装；礼品内容；全年 UGC 与评价做信任；EDM BFCM 序列；预算向高峰月集中。</li>
+<li><strong>衡量指标：</strong>销量、ROAS、新老客占比。</li>
 </ul>
 <h2 id="待决策事项">待决策事项</h2>
 <ul class="task-list">
-<li><label><input
-type="checkbox" />已定：中文主张为“耐摔、不易坏的可调哑铃”；待办：英文主张与副总确认、商标检索与母语者理解测试</label></li>
-<li><label><input type="checkbox" />美国定价：$799 与 MSRP $699.99 /
-促销价 $649.99 统一；德国定价</label></li>
-<li><label><input type="checkbox" />美国与德国的具体上市日期，及首季
-2,000 台的统计窗口</label></li>
-<li><label><input type="checkbox" />热处理硬度数值（工厂提供后用于工艺内容）</label></li>
-<li><label><input type="checkbox" />P20 是否纳入同一
-Campaign</label></li>
+<li><label><input type="checkbox" />预售价与赠品：$799→$699、赠哑铃底座（价值 $199）是否确定；预售期与开售后价格衔接</label></li>
+<li><label><input type="checkbox" />首销目标台数（暂按 2,000 台）及统计窗口</label></li>
+<li><label><input type="checkbox" />大货到港日期（预计 2/15）与德国上市日期</label></li>
+<li><label><input type="checkbox" />预售退款与延期通知政策（FTC Mail Order Rule）</label></li>
+<li><label><input type="checkbox" />T2 生活切面大号名单（含 YouTube 千万订阅的 Jesse 具体账号）与预算</label></li>
+<li><label><input type="checkbox" />预算按年度编制与财务分账口径（会计科目、费用性质、分账归口、结算节奏）拆分</label></li>
+<li><label><input type="checkbox" />热处理硬度、重量精度 ±1.5%、跌落测试报告（工厂确认后进入素材）</label></li>
 </ul>
 <h2 id="参考来源">参考来源</h2>
 <ul>
-<li>内部资料：利润测算、销售预估；《MERACH P19 产品营销方案》；《P19 线上市场容量》</li>
+<li>内部资料：《MERACH P19 产品营销方案》；《P19 线上市场容量》；《P19 美国 DTC 流量与转化测算》（季节指数、转化率）；《P19 德国 DTC 流量与转化测算》</li>
 <li><a
 href="https://repfitness.com/blogs/rep-news/rep-x-pepin-coming-soon">REP
 x PÉPIN Coming Soon 公告</a></li>
